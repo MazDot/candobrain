@@ -59,7 +59,7 @@ class Footer extends React.Component {
     }
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(feedback.email))
     {
-      axios.post('http://localhost:5000/feedback/add', feedback)
+      axios.post('https://candobrain.herokuapp.com/feedback/add', feedback)
       .then(res => console.log (res.data));
       //maybe alert them its sent
       alert('Thanks for the feedback');
