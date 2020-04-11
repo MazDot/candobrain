@@ -22,6 +22,10 @@ const feedbackRouter = require('./routes/feedback');
 
 app.use('/feedback', feedbackRouter);
 
+if (process.env.NODE_ENV === 'production') {
+  app.use (express.static ('Cando/build'));
+}
+
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
