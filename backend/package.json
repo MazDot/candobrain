@@ -5,9 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd Cando && npm run build",
-    "install-cando": "cd Cando && npm install",
-    "install-env": "npm i dotenv",
-    "heroku-postbuild": "npm run install-cando && npm run build && install-env",
+    "install-cando": "npm install",
+    "heroku-postbuild": "npm run install-cando && npm run build",
     "start": "node server.js"
   },
   "keywords": [],
