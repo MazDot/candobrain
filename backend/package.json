@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd Cando && npm run build",
-    "install-cando": "npm install",
-    "heroku-postbuild": "npm run install-cando && npm run build",
+    "install-cando": "npm install && npm i react-unity-webgl",
+    "install-unity": "npm i react-unity-webgl",
+    "heroku-postbuild": "npm run install-cando && npm run build && npm run build",
     "start": "node server.js"
   },
   "keywords": [],
